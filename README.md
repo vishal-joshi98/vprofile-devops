@@ -82,9 +82,6 @@ The artifact was uploaded to an S3 bucket for centralized access and versioning.
 
 On the app server, the .war file was fetched from S3 and deployed to Tomcat:
 
-bash
-Copy
-Edit
 # Example commands
 aws s3 cp s3://my-bucket-name/ROOT.war /opt/tomcat/webapps/
 
