@@ -103,8 +103,9 @@ rabbitmq.password=passwd
 
 ```
 vprofile_refactor/
-├── screenshots/              # Setup evidence/screens
-├── README.md                 # This file
+├── screenshots/             # Setup architecture
+├── README.md                # This file
+├── src                      # source file
 ```
 
 ----------------------------------
