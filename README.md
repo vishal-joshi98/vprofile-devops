@@ -59,20 +59,20 @@ aws s3 cp target/ROOT.war s3://<your-bucket-name>/ROOT.war
 Set the following environment properties in **Application.properties** which is present at "*\src\main\resources\application.properties":
 
 ```properties
-jdbc.url=jdbc:mysql://vprofile-rearch-rds.cghugysoox62.us-east-1.rds.amazonaws.com:3306/accounts?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+jdbc.url=jdbc:mysql://RDS-endpoint:3306/accounts?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
 jdbc.username=user
 jdbc.password=passwd
 
 #Memcached Configuration For Active and StandBy Host
 #For Active Host
-memcached.active.host=vprofile-rearch-cache.j3k1vz.cfg.use1.cache.amazonaws.com
+memcached.active.host=memcache-endpoint
 memcached.active.port=11211
 #For StandBy Host
 memcached.standBy.host=127.0.0.2
 memcached.standBy.port=11211
 
 #RabbitMq Configuration
-rabbitmq.address=b-e53bc5a2-b1b2-43dd-99f8-1608b4ab4698.mq.us-east-1.on.aws
+rabbitmq.address=rabbitmq-endpoint
 rabbitmq.port=5671
 rabbitmq.username=user
 rabbitmq.password=passwd
